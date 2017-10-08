@@ -13,6 +13,12 @@ public:
     ~Engine();
     SDL_Window *window;
     SDL_Renderer *renderer;
+
+    int win_w;
+    int win_h;
+
+    int world_x =0;
+    int world_y = 0;
 };
 
 #endif

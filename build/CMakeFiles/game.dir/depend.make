@@ -12,10 +12,12 @@ CMakeFiles/game.dir/game/main.cpp.o: /home/ethan/Desktop/game/src/game/main.cpp
 CMakeFiles/game.dir/game/sprite.cpp.o: /home/ethan/Desktop/game/src/../include/game/sprite.hpp
 CMakeFiles/game.dir/game/sprite.cpp.o: /home/ethan/Desktop/game/src/game/sprite.cpp
 
+CMakeFiles/game.dir/game/terrain/chunk.cpp.o: /home/ethan/Desktop/game/src/../include/game/terrain/chunk.hpp
 CMakeFiles/game.dir/game/terrain/chunk.cpp.o: /home/ethan/Desktop/game/src/game/terrain/chunk.cpp
 
 CMakeFiles/game.dir/game/terrain/terrain.cpp.o: /home/ethan/Desktop/game/src/../include/game/engine.hpp
 CMakeFiles/game.dir/game/terrain/terrain.cpp.o: /home/ethan/Desktop/game/src/../include/game/sprite.hpp
+CMakeFiles/game.dir/game/terrain/terrain.cpp.o: /home/ethan/Desktop/game/src/../include/game/terrain/chunk.hpp
 CMakeFiles/game.dir/game/terrain/terrain.cpp.o: /home/ethan/Desktop/game/src/../include/game/terrain/terrain.hpp
 CMakeFiles/game.dir/game/terrain/terrain.cpp.o: /home/ethan/Desktop/game/src/game/terrain/terrain.cpp
 

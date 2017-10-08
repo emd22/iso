@@ -4,6 +4,7 @@
 #include <terrain/terrain.hpp>
 
 Engine::Engine() {
+    SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
     SDL_Init(SDL_INIT_VIDEO);
     SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
     SDL_GL_SetSwapInterval(1);
@@ -25,6 +26,8 @@ Engine::Engine() {
     SDL_SetWindowFullscreen(window, SDL_WINDOW_FULLSCREEN_DESKTOP);
     renderer = SDL_CreateRenderer(window, -1, 0);
     SDL_SetRenderDrawColor(renderer, 175, 0, 100, 255);
+
+    SDL_GetWindowSize(window, &win_w, &win_h);
 }
 
 void Engine::game_loop() {

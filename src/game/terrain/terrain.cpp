@@ -1,4 +1,5 @@
 #include <terrain/terrain.hpp>
+#include <terrain/chunk.hpp>
 #include <sprite.hpp>
 #include <engine.hpp>
 
@@ -7,13 +8,16 @@
 #define TILE_WIDTH 64
 #define TILE_HEIGHT 64
 
-#define WIDTH 5
-#define HEIGHT 5
+#define WIDTH 50
+#define HEIGHT 50
 
 Terrain::Terrain(Engine *engine) {
     _engine = engine;
     int tile_x = 0;
     int tile_y = 0;
+
+    int x = -1000;
+    int y = 200;
 
     std::vector<Tile> temp_tiles;
 
@@ -50,9 +54,12 @@ void Terrain::draw() {
     // }
     for (int i = 0; i < HEIGHT; i++) {
         for (int j = 0; j < WIDTH; j++) {
-            tile_grass.x = tiles[i][j].x;
-            tile_grass.y = tiles[i][j].y;
-            tile_grass.draw();
+            if (tiles[i][j].is_visible(_engine->win_w, _engine->win_h, _engine->world_x, _engine->world_y)) {
+                tile_grass.x = tiles[i][j].x;
+                tile_grass.y = tiles[i][j].y;
+                //printf("x %d, y %d\n", tile_grass.x, tile_grass.y);
+                tile_grass.draw();
+            }
         }
     }
 }

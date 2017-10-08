@@ -14,6 +14,8 @@ string
 SDL2/SDL.h
 -
 
+/home/ethan/Desktop/game/src/../include/game/terrain/chunk.hpp
+
 /home/ethan/Desktop/game/src/../include/game/terrain/terrain.hpp
 vector
 -
@@ -45,9 +47,15 @@ sprite.hpp
 -
 
 /home/ethan/Desktop/game/src/game/terrain/chunk.cpp
+terrain/chunk.hpp
+-
+stdio.h
+-
 
 /home/ethan/Desktop/game/src/game/terrain/terrain.cpp
 terrain/terrain.hpp
+-
+terrain/chunk.hpp
 -
 sprite.hpp
 -
